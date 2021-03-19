@@ -99,19 +99,15 @@ if __name__ == "__main__":
 
         elif 'fine' in query:
             speak("that great sir please tell me what can i do")
-
-        # elif 'google ' in query:
-        #     speak("what should i search")
-        #     # whatwouldsearch = takeCommand()
-        #     # speak('searching ' + whatwouldsearch)
-        #     pywhatkit.search(whatwouldsearch)
-
+        
         elif 'play' in query:
             whatShouldPlay = query.replace('play', '')
             speak('playing ' + whatShouldPlay)
             pywhatkit.playonyt(whatShouldPlay)
 
-
+        elif 'open google' in query:
+            webbrowser.open("google.com")
+            
         elif 'open code' in query :
             codePath = "C:\\Users\\singhk3\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
@@ -132,42 +128,6 @@ if __name__ == "__main__":
 
         elif 'camera' in query:
             SecurityCamera()
-
-        elif 'open boost' in query:
-            webbrowser.open("boostcrm.lightning.force.com")
-
-        elif 'open citibank' in query:
-            webbrowser.open(".citibank.co.in/ibank/login/IQPin1.jsp?dOfferCode=PAYCCBILL")
-
-        elif 'open ss' in query:
-            webbrowser.open("training.sharesource.com/group/train-05")
-
-        elif '2016' in query :
-            codePath = "C:\\Users\\singhk3\\Desktop\\Baxter\\2016"
-            os.startfile(codePath)
-
-        elif '2017' in query :
-            codePath = "C:\\Users\\singhk3\\Desktop\\Baxter\\2017"
-            os.startfile(codePath)
-
-        elif '2018' in query :
-            codePath = "C:\\Users\\singhk3\\Desktop\\Baxter\\2018"
-            os.startfile(codePath)
-        elif '2019' in query :
-            codePath = "C:\\Users\\singhk3\\Desktop\\Baxter\\2019"
-            os.startfile(codePath)
-
-        elif '2020' in query :
-            codePath = "C:\\Users\\singhk3\\Desktop\\Baxter\\2020"
-            os.startfile(codePath)
-
-        elif 'baxter' in query :
-            codePath = "C:\\Users\\singhk3\\Desktop\\Baxter"
-            os.startfile(codePath)
-
-        elif 'outlook' in query :
-            codePath = "C:\\Program Files\\Microsoft Office\\root\\Office16\\OUTLOOK.EXE"
-            os.startfile(codePath)
 
         elif 'email' in query:
             try:
